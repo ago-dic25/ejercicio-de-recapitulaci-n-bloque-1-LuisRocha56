@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*img {
+  mask-image: linear-gradient(
+    black 50%, 
+    transparent
+  );
+}*/
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #7f5539;
+}
+
+a {
+  color: #e6ccb2;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #b08968;
+  color: #ede0d4;
+  padding: 1rem;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: #ede0d4;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+}
+
+.menu li {
+  margin: 0.5rem 0;
+}
+
+.menu a {
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #dad7cd7a;
+}
+
+.hero h1 {
+  font-size: 2rem;
+}
+
+.hero p {
+  margin: 1rem 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #7f5539;
+  color: #ede0d4;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #b08968;
+}
+
+/* Agenda */
+#agenda {
+  padding: 2rem 1rem;
+}
+
+#agenda ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+/* Ponentes */
+#ponentes {
+  padding: 2rem 1rem;
+}
+
+.ponentes-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.ponentes-grid article {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(224, 21, 21, 0.1);
+}
+
+.ponentes-grid img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Registro */
+#registro {
+  padding: 2rem 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #ddb892;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social a {
+  color: #fff;
+}
+
+/* Responsividad */
+@media (min-width: 768px) {
+  nav button {
+    display: none;
+  }
+  .menu {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  #agenda ul {
+    columns: 2;
+  }
+
+  .ponentes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .ponentes-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

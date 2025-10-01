@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evento de Tecnología</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+  <header>
+    <div class="logo">TECNOLOGIA 2025</div>
+    <nav aria-label="Menú principal">
+      <button id="menu-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+      <ul id="menu" class="menu">
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#ponentes">Ponentes</a></li>
+        <li><a href="#registro">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Evento de Tecnología 2025</h1>
+      <p>Conectando innovación, conocimiento y futuro</p>
+      <a href="#registro" class="btn">Regístrate ahora</a>
+    </section>
+
+    <!-- Agenda -->
+    <section id="agenda">
+      <h2>Agenda</h2>
+      <ul>
+        <li>09:00 - Inauguración</li>
+        <li>10:00 - Charla sobre IA</li>
+        <li>12:00 - Panel de expertos en Ciberseguridad</li>
+        <li>15:00 - Taller de Desarrollo Web</li>
+        <li>17:00 - Clausura</li>
+      </ul>
+    </section>
+
+    <!-- Ponentes -->
+    <section id="ponentes">
+      <h2>Ponentes</h2>
+      <div class="ponentes-grid">
+        <article>
+          <img src="img/ana.jpg" alt="Foto de Ana López" width="440">
+          <h3>Ana López</h3>
+          <p>"El Futuro de la Inteligencia Artificial"</p>
+        </article>
+        <article>
+          <img src="img/juan.jpg" alt="Foto de Juan Pérez" width="415">
+          <h3>Juan Pérez</h3>
+          <p>"Ciberseguridad en la Era Digital"</p>
+        </article>
+        <article>
+          <img src="img/Maria.jpg" alt="Foto de María García">
+          <h3>María García</h3>
+          <p>"Desarrollo Web Responsivo"</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Registro -->
+    <section id="registro">
+      <h2>Regístrate</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text" required>
+
+        <label for="email">Correo:</label>
+        <input id="email" type="email" required>
+
+        <button type="submit" class="btn">Enviar</button>
+        <p id="mensaje" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contacto: evento@universidad.edu</p>
+    <ul class="social">
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
